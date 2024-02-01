@@ -29,6 +29,7 @@ collections:
           media_folder: '/assets/images/blogs/{{fields.title}}/{{name}}',
           public_folder: '/images/blogs/{{fields.title}}/{{name}}',
           required: false,
+          allow_file_formats: ['jpg', 'jpeg', 'png', 'gif'],
         }
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Categories', name: 'blog_categories', widget: 'list' }
